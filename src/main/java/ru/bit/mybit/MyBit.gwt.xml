@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='MyBit'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+ <!--  <inherits name='com.google.gwt.user.User' />           -->
+ <inherits name='com.sencha.gxt.ui.GXT'/>
+
+  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard' /> -->
+  <inherits name='com.sencha.gxt.theme.triton.Theme' />
+  <inherits name="com.sencha.gxt.chart.Chart"/>
+
+	  <set-property name="gxt.user.agent" value="ie9, ie10, gecko1_9, safari5, chrome" />
+ 
+	  <!-- merge gecko1_9, safar5, and chrome into one permutation -->
+	  <collapse-property name="gxt.user.agent" values="gecko1_9, safari5, chrome" />
+ 
+	  <!-- merge ie9 and ie10 into one permutation with a wildcard-->
+	  <collapse-property name="gxt.user.agent" values="ie*" />
+	  <!-- merge all operating system permutations -->
+	  <collapse-property name="user.agent.os" values="*" />
+           <collapse-all-properties />
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='ru.bit.mybit.client.MyBit' />
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client' />
+  <source path='shared' />
+  <stylesheet src="reset.css" />
+</module>

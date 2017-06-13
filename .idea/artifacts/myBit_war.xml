@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="myBit:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="myBit-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="myBit:war exploded" />
+    </root>
+  </artifact>
+</component>
